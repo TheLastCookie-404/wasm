@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.vue": "vue",
+    "*.rs": "rust",
+    "emscripten.h": "c",
+    "console.h": "c"
+  }
+}

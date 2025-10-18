@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/petrooshka336/Programming/Compilers/emsdk/upstream/emscripten/system/include/"
+            ]
+        }
+    ],
+    "version": 4
+}

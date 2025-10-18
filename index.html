@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>Hi</div>
+  <script src="main/a.out.js"></script>
+  <script>
+    // For streaming (works without output js connecting)
+    WebAssembly.instantiateStreaming(fetch("streaming/a.out.wasm"), {})
+      .then((results) => {
+        let res = results.instance.exports.summ(16, 54);
+        console.log(res);
+      });
+  </script>
+</body>
+
+</html>
