@@ -10,6 +10,7 @@
 <body>
   <div>Hi</div>
   <script src="main/a.out.js"></script>
+  <script src="wrapping/a.out.js"></script>
   <script>
     // For streaming (works without output js connecting)
     WebAssembly.instantiateStreaming(fetch("streaming/a.out.wasm"), {})
@@ -17,6 +18,10 @@
         let res = results.instance.exports.summ(16, 54);
         console.log(res);
       });
+  </script>
+  <script>
+    // ccall
+    Module.ccall("main", "number");
   </script>
 </body>
 
